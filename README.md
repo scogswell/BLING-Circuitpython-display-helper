@@ -54,6 +54,7 @@ These shape functions account for rotation:
 * `.rect(self,x,y,w,h,color,fill=False)` draw a rectagle outline, with optional fill
 
 Notes: 
+
 * Most drawing functions can extend outside the BLING physical display and just won't show up.  
 * When you supply a `color` it can be in whatever is accepted by Neopixels, like a tuple of RGB `(128,255,32)` or a hexadecimal number `0xFFA322`
 
@@ -63,3 +64,5 @@ You need these libraries in /lib to satisfy dependencies:
 * `adafruit_led_animation`
 * `adafruit_framebuf`
 * `adafruit_pixel_framebuf`
+
+https://github.com/scogswell/BLING-Circuitpython-display-helper/assets/3185255/17b2b02e-987c-454f-a1f6-67775d70cc35
