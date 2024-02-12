@@ -51,7 +51,7 @@ These shape functions account for rotation:
 * `.vline(x,y,h,color)` draw a vertical line 
 * `.circle(center_x, center_y, radius, color)` draw a circle
 * `.fill_rect(x,y,w,h,color)` draw a filled rectange
-* `.rect(self,x,y,w,h,color,fill=False)` draw a rectagle outline, with optional fill
+* `.rect(x,y,w,h,color,fill)` draw a rectagle outline, with optional fill
 
 Notes: 
 
