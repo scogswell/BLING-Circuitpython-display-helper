@@ -41,9 +41,9 @@ With `BLING.py` you get access to these functions:
 
 `.setpixel(x,y,color)` set a single pixel on BLING to a color, accounting for rotation 
 
-`.text(text, font, x, y, color_foreground, color_background=None, show=False)` Dispays `text` on BLING using `font` which can either be a adafruit_bitmap_font object (PCF or BDF) or a string filename pointing to a .bin style font (ie `font5x8.bin`).  if `color_background` is a color, blank areas around the text are filled with that color.  if `color_background` is None then background pixels will not be written to (preseving pixels for lazy compositing)
+`.text(text, font, x, y, color_foreground, color_background=None, show=False)` Dispays `text` on BLING using `font` which can either be a adafruit_bitmap_font object (PCF or BDF) or a string filename pointing to a .bin style font (ie `font5x8.bin`).  if `color_background` is a color, blank areas around the text are filled with that color.  if `color_background` is None then background pixels will not be written to (preserving pixels for lazy compositing)
 
-`.bitmap(image, palette, x,y)` and `.bitmap_tile(self,image,palette,x,y,xb,yb,w,h):`  Show an `adafruit_imageload` compatible displaio bitmap at coordinates x,y.  for `.bitmap_tile` you can choose a subarea of the bitmap `x,y,w,h` and use it like how `TileGrid` works in `displayio`.  You can use this in conjunction with `gifio` to show (small) animated gifs on BLING, see the demo for detail.  
+`.bitmap(image, palette, x,y)` and `.bitmap_tile(image,palette,x,y,xb,yb,w,h):`  Show an `adafruit_imageload` compatible displaio bitmap at coordinates x,y.  for `.bitmap_tile` you can choose a subarea of the bitmap `xb,yb,w,h` and use it like how `TileGrid` works in `displayio`.  You can use this in conjunction with `gifio` to show (small) animated gifs on BLING, see the demo for detail.  
 
 These shape functions account for rotation: 
 * `.line(x_0, y_0, x_1, y_1, color):` Draw a line
